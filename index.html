@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakulator BMI</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="content-wrapper">
+    <div class="bmi-page">
+    <div class="page-hitung">
+    <h1>Kakulator BMI</h1>
+    <p id="desc">Berat badan ideal adalah impian semua orang,
+         Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
+         berat badan ideal juga menandakan kondisi tubuh yang sehat. 
+         Bagaimana denganmu? Yuk, 
+    hitung sekarang di kakulator BMI.</p>
+
+    <div class="card">
+        <form id="name=" class="form">
+            <div class="jenis-kelamin">
+                <b>Jenis Kelamin</b>
+            </br>
+                <input type="radio" name="jenis-kelamin"
+                value="P" required="true"/>
+                <label for="jenis-kelamin">Pria</label>
+                <input type="radio" name="jenis-kelamin" value="W"
+                required="true"/>
+                <label for="jenis-kelamin">Wanita</label>
+            </div>
+            <div class="form-group">
+                <label for="berat-badan">Berat Badan (Kg)</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-pencil"></i>
+                    <input name="berat-badan" id="weight" type="text" onkeypress="return /[0-9]/i.test(event.key)" required="true"/>   
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="usia">Usia (Tahun)</label>
+                <div class="icon-input">
+                <i class="fa-solid fa-pencil"></i>
+                 <input name="usia" type="text" onkeypress="return /[0-9]/i.test(event.key)" required="true"   />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tinggi-badan">Tinggi badan (cm)</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-pencil"></i>
+                 <input name="tinggi-badan" id="height" type="text" onkeypress="return /[0-9]/i.test(event.key)" required="true"   />
+                </div>
+            </div>
+        </br>
+            <div class="form-group">
+                <button id="hitung" type="button"
+                class="button" onClick="calculateBmi()">Hitung BMI</button>
+                <button class="btn btn-danger" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+<div class="keunggulan-fitur">
+
+<h1>Keunggulan Fitur</h1>
+
+<p>1. Menghitung berat badan</p>
+
+<p>2. Menentukan kategori berat badan ideal atau tidak</p>
+
+<p>3. Mempersiapkan program penurunan berat badan</p>
+
+</br>
+<p id="desc2">Kakulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+    dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat sperti dokter.
+</p>
+</br>
+</br>
+<p>Kakulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+    Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram)
+    dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+</p>
+
+</div>  
+</div>
+
+<div class="page-hasil">
+
+    <h1>Hasil</h1>
+    </br>
+
+    <div class="card2">
+    <form id="hasil" class="hasil">
+        <div class="hasil BMI">
+            <input class="form-control" type="text" id="result" size="28" readonly border="none">
+        </div>
+        <div class="hasil angka">
+            <input class="form-control" type="text" id="bmi" size="28" readonly border="none">
+        </div>
+        <div class="hasil katakata">
+            <input class="form-control" type="text" id="resultkatakata" size="28" readonly border="none">
+        </div>
+        <button id="downloadhasil" type="button"
+                class="buttondownloadhasil">Download Hasil BMI</button>
+    </form>
+    </div>
+</div> 
+
+</div>
+</div>
+</body>
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/4578aea15d.js" crossorigin="anonymous"></script>
+</html>

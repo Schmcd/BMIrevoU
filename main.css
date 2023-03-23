@@ -1,0 +1,84 @@
+html, body, .content-wrapper{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri;
+}
+
+p{
+    text-align: justify;
+}
+
+
+.card{
+    background:#D3D3D3;
+    margin-left: 25px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+.hitung{
+    padding: 100px; 
+}
+
+.form-group{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px; 
+}
+.content-wrapper{
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.bmi-page{
+    flex : 1;
+    display: flex;
+}
+h1{
+    margin-left: 20px;
+}
+.page-hitung {
+width: 50%;
+
+}
+.hasil{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.card2{
+    background:#D3D3D3;
+    margin-left: 25px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    border-style: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    font-family: Arial;
+    margin-left: 150px;
+}
+.buttondownloadhasil{
+    margin-left: 200px;
+}
+.page-hasil{
+ width: 50%;
+}
+
